@@ -2,7 +2,7 @@
 
 This is a part of my assignment from my CSE 574 - Intro to ML course. This assignment is divided into four parts:
 
-# Part 1: Data Preprocessing 
+## Part 1: Data Preprocessing 
 
 File : data_preprocess.ipynb
 
@@ -22,7 +22,7 @@ File : data_preprocess.ipynb
 - Identify and remove  unrelated features using correlation matrix
 - Normalize non-categorial values
 
-# Part 2: Logistic Regression using Gradient Descent 
+## Part 2: Logistic Regression using Gradient Descent 
 
 File: log_regression_using_gd.ipynb
 Dataset used: Penguins Dataset
@@ -77,7 +77,7 @@ prediction = model.predict(x_test[0])
 ```
 
 
-# Part 3: Linear and Ridge Regression using OLS
+## Part 3: Linear and Ridge Regression using OLS
 
 File: lin_reg_ols.ipynb
 Dataset used: Wine quality dataset
@@ -91,7 +91,7 @@ Linear regression fits a line to minimize the **mean squared error (MSE)** betwe
 **Closed-form solution:**
 
 $$
-w = (Xᵀ X)^(-1) Xᵀ y
+w = (Xᵀ X) ^ {-1} Xᵀ y
 $$
 
 Where:
@@ -106,7 +106,7 @@ Ridge regression adds a **regularization term** to penalize large weights and av
 **Closed-form solution:**
 
 $$
-w = (Xᵀ X + λI)^(-1) Xᵀ y
+w = (Xᵀ X + λI)^{-1} Xᵀ y
 $$
 
 Where:
@@ -129,7 +129,7 @@ $$
 
 
 
-# Part 4: Elastic Net Regression with Gradient Descent
+## Part 4: Elastic Net Regression with Gradient Descent
 
 File: elastic_net_reg_using_gd.ipynb
 Dataset used: Emission dataset
