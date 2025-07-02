@@ -2,9 +2,13 @@
 
 This is a part of my assignment from my CSE 574 - Intro to ML course. This assignment is divided into four parts:
 
-# Part 1: Data Preprocessing (data_preprocess.ipynb)
+# Part 1: Data Preprocessing 
 
-# Part 2: Logistic Regression using Gradient Descent (log_regression_using_gd.ipynb)
+File : data_preprocess.ipynb
+
+# Part 2: Logistic Regression using Gradient Descent 
+
+File: log_regression_using_gd.ipynb
 
 This project implements **Logistic Regression** (Binary Classification) from scratch in Python using NumPy, without relying on libraries like scikit-learn. It supports binary classification through gradient descent optimization and is designed to be simple and educational.
 
@@ -25,21 +29,21 @@ Logistic Regression is a supervised learning algorithm used for **binary classif
 
 1. **Sigmoid Function**:  
    Converts linear combinations into probabilities  
-   \[
-   \sigma(z) = \frac{1}{1 + e^{-z}}
-   \]
+   ```
+    sigmoid(z) = 1 / (1 + exp(-z))
+    ```
 
 2. **Loss Function (Binary Cross-Entropy)**:  
    Measures prediction error  
-   \[
-   J(w) = -\frac{1}{n} \sum \left[ y \log(\hat{y}) + (1 - y) \log(1 - \hat{y}) \right]
-   \]
+   ```
+    Loss = -(1/n) * Σ [ y * log(y_pred) + (1 - y) * log(1 - y_pred) ]
+    ```
 
 3. **Gradient Descent**:  
    Updates weights to minimize the loss  
-   \[
-   w := w - \alpha \cdot \nabla J(w)
-   \]
+   ```
+    weights = weights - learning_rate * gradient
+    ```
 
 4. **Model Training (`fit`)**:  
    - Initializes weights and bias
